@@ -1,0 +1,162 @@
+
+:root{
+  --main-radius:5px;
+  --main-padding:5px;
+}
+
+.container{
+   height: 100%;
+  width:100%;
+  display: grid;
+  grid-template-rows: 0.6fr 2fr 2.3fr 2.3fr 2.3fr 2.3fr 0.8fr;
+  grid-template-columns:2fr 2fr;
+  grid-template-areas:
+  "topnav topnav"
+  "about about " 
+  "education education"
+  "projects projects"
+  "experience experience"
+  "blogs blogs"
+  "contact contact";
+  gap: 0.5em;
+}
+
+.topnav{
+  grid-area: topnav;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+#about
+{
+ 
+  grid-area: about;
+  height: auto;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+#education
+{
+  grid-area: education;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+
+#projects
+{
+  grid-area: projects;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+#experience
+{
+  grid-area: experience;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+
+#blogs
+{
+  grid-area: blogs;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+#contact
+{
+  grid-area: contact;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+.footer{
+
+  grid-area: footer;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+
+h2{
+    background-color: rgb(214, 214, 211);
+    text-align: left;
+  }
+
+body
+{
+    background-color: rgb(221, 253, 251);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#box2{
+  
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+}
+#box1 {
+  float: left;
+
+
+}
+#box2{
+  width: auto;
+  height: auto;
+
+}
+
+
+.topnav {
+  grid-area: topnav;
+  overflow: hidden;
+  background-color: #999494;
+}
+
+.topnav a {
+ 
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+
+  background-color: #121111;
+  color: rgb(223, 219, 219);
+}
+
+.topnav a.active {
+
+  color: white;
+}
+
+@media only screen and (max-width:500px)
+{
+  .container{
+    grid-template-rows: 0.4fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr  0.2fr;
+    grid-template-columns:1fr;
+    grid-template-areas:
+    "topnav "
+    "about   " 
+    "education "
+    "projects "
+    "experience "
+    "blogs "
+    "contact";
+   
+    gap: 0.4em;
+  }
+ #about{
+  display: grid;
+ }
+ 
+}
+
